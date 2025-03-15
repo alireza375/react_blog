@@ -16,9 +16,10 @@ const Blogs = ({handleAddToBookmark, handleMarkAsRead}) => {
            {
                blogs.map(blog => <Blog 
                 key={blog.id} 
+                blog={blog}
                 handleAddToBookmark={handleAddToBookmark}
                 handleMarkAsRead={handleMarkAsRead}
-                blog={blog}></Blog>)
+                ></Blog>)
            }
         </div>
     );
